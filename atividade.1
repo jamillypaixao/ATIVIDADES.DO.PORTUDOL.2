@@ -1,0 +1,39 @@
+programa
+{
+	funcao inicio()
+	{
+		
+		real peso, altura, imc
+
+		escreva("Digite o seu peso (em kg): ")
+		leia(peso)
+
+		escreva("Digite a sua altura (em metros, ex: 1.75): ")
+		leia(altura)
+
+		
+		imc = peso / (altura * altura)
+
+	
+		escreva("\nSeu IMC é: ", imc)
+
+	
+		se (imc < 18.5)
+		{
+			escreva("\nClassificação: Abaixo do peso\n")
+		}
+		senao se (imc >= 18.5 e imc <= 24.9)
+		{
+			escreva("\nClassificação: Peso normal\n")
+		}
+		senao se (imc >= 25.0 e imc <= 29.9)
+		{
+			escreva("\nClassificação: Sobrepeso\n")
+		}
+		senao
+		{
+			escreva("\nClassificação: Obesidade\n")
+		}
+	}
+}
+
