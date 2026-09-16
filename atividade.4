@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+ 
+  real valorOriginal, valorFinal, desconto
+
+	
+		escreva("Digite o valor total da compra (R$): ")
+		leia(valorOriginal)
+
+		se (valorOriginal > 200.0)
+		{
+			desconto = valorOriginal * 0.10
+			valorFinal = valorOriginal - desconto
+			
+			escreva("Você recebeu 10% de desconto!\n")
+			escreva("Valor final a pagar: R$ ", valorFinal)
+		}
+		senao
+		{
+			escreva("Sua compra não atinge o valor mínimo para desconto.\n")
+			escreva("Valor total a pagar: R$ ", valorOriginal)
+    }  
+  }
+}
